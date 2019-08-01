@@ -1,39 +1,6 @@
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-
-  if (document.body.scrollTop >500 || document.documentElement.scrollTop > 500) {
-    document.getElementById("top").style.display = "block";
-  }
-  if (document.body.scrollTop >200 || document.documentElement.scrollTop > 200) {
-    document.getElementById("down").style.display = "block";
-  }
-  if (document.body.scrollTop >300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("bibi").className = "slideUp";
-}
-           if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-          document.getElementById("competences").className = "slideUp";
-        }
-        if (document.body.scrollTop >800 || document.documentElement.scrollTop > 800) {
-              document.getElementById("technologies").className = "slideUp";
-        }
-        if (document.body.scrollTop > 1400 || document.documentElement.scrollTop > 1400) {
-    document.getElementById("portfolio").className = "slideUp";
-        }
-        if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
-            document.getElementById("contact").className = "slideUp";
-                }
-
-
-                else {
-                  document.getElementById("down").style.display = "none";
-                
-                }
-}
-
 function myMenu() {
-  var element = document.getElementsByClassName("navigation");
 
+  var element = document.querySelector(".navigation");
   if (element.classList) { 
     element.classList.toggle("isOpen");
   } else {
@@ -47,3 +14,46 @@ function myMenu() {
       element.className = classes.join(" "); 
   }
 }
+
+document.querySelector("#etoile").addEventListener('click', function(){
+  myMenu();
+})
+
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop >100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("top").style.display = "block";
+}
+        else {
+          document.getElementById("top").style.display = "none";
+        }
+        if (document.body.scrollTop >50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("down").style.display = "block";
+        }
+        else {
+          document.getElementById("down").style.display = "none";
+
+}
+  if (document.body.scrollTop >300 || document.documentElement.scrollTop > 300) {
+    document.getElementById("bibi").className = "slideUp";
+}
+           if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+          document.getElementById("competences").className = "slideUp";
+        }
+        if (document.body.scrollTop >1100 || document.documentElement.scrollTop > 1100) {
+              document.getElementById("technologies").className = "slideUp";
+        }
+        if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+    document.getElementById("portfolio").className = "slideUp";
+        }
+        if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+            document.getElementById("contact").className = "slideUp";
+                }
+        
+                 
+}
+$("#centralModalSuccess").on('show.bs.modal', function(){
+
+});

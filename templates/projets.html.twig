@@ -9,15 +9,73 @@
         </div>
         <h5>Mes réalisations</h5>
         <div class="row">
+                <div class="modal fade" id="museum" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-notify modal-success" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                    <!--Header-->
+                     <!--Body-->
+                    <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                  </button>
+                                </br>
+                            <figure class="snip1347">
+                                    <img src="build/img/musee2.png" alt="site de gestion de base de données d'un musée" width:300 height:800 />
+                                    <div class="date">A musée vous</div>
+                                    <figcaption>
+                                      <h2>Description</h2>
+                                      <p>Dans le cadre de la formation, projet réalisé à partir d'un jeu de données publiques des musées de France, création d'un site web avec une carte, popup.</p>
+                                      <h2>Technologies utilisés</h2>
+                                    <p>HTML SASS Twig Javascript PHP Bootstrap </p>
+                                    <a href="#" class="read-more">Github<i class="ionicons ion-social-github-outline"></i></a></figcaption>
+                                  </figure>
+                                  
+                    </div>
+                
+                    
+                  </div>
+                  <!--/.Content-->
+                </div>
+                </div>
+                <div class="modal fade" id="ski" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-notify modal-success" role="document">
+                  <!--Content-->
+                  <div class="modal-content">
+                    <!--Header-->
+                     <!--Body-->
+                    <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                  </button>
+                                </br>
+                            <figure class="snip1347 ski">
+                                    <img src="build/img/ski2.png" alt="site de gestion de base de données d'un musée" width:300 height:800 />
+                                    <div class="date">Too shuss</div>
+                                    <figcaption class="ski">
+                                      <h2>Description</h2>
+                                      <p>Dans le cadre de la formation, projet réalisé à partir d'un jeu de données publiques des musées de France, création d'un site web avec une carte, popup.</p>
+                                      <h2>Technologies utilisés</h2>
+                                    <p>HTML SASS Twig Javascript PHP Bootstrap </p><a href="#" class="read-more">Github<i class="ionicons ion-social-github-outline"></i></a></figcaption>
+                                  </figure>
+                                  
+                    </div>
+                
+                    
+                  </div>
+                  <!--/.Content-->
+                </div>
+                </div>
             <div class="col-4 projets">
                 <figure class="snip1541">
                     <img src="build/img/musee2.png" alt="site de gestion de base de données d'un musée" width:300 height:800 />
                     <figcaption>
                         <h3>Projet <span>Musée</span></h3>
                         <br />
-                        <i class="ion-ios-play-outline"></i>
+                        <a href="" data-toggle="modal" data-target="#museum"><i class="ion-ios-play-outline"></i></a>
                     </figcaption>
-                    <a href="#"></a>
                 </figure>
             </div>
 
@@ -29,7 +87,7 @@
                         <br />
                         <i class="ion-ios-play-outline"></i>
                     </figcaption>
-                    <a href="#"></a>
+                    <a href="" data-toggle="modal" data-target="#ski"></a>
                 </figure>
             </div>
             <div class="col-4 projets">
@@ -82,9 +140,5 @@
 
         </div>
     </div>
- 
-    
-    
-
 </section>
 {% block javascripts %}{{ encore_entry_script_tags('script') }}{% endblock %}
