@@ -34,11 +34,15 @@ function myFunction() {
         }
         else {
           document.getElementById("down").style.display = "none";
+        }
 
-}
-  if (document.body.scrollTop >300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("bibi").className = "slideUp";
-}
+          if (document.body.scrollTop >300 || document.documentElement.scrollTop > 300) {
+           document.getElementById("qui").className = "slideUp";
+          }
+          if (document.body.scrollTop >450 || document.documentElement.scrollTop > 450) {
+            document.getElementById("parcours").className = "slideUp";
+           }
+
            if (document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
           document.getElementById("competences").className = "slideUp";
         }
@@ -48,7 +52,7 @@ function myFunction() {
         if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
     document.getElementById("portfolio").className = "slideUp";
         }
-        if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+        if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
             document.getElementById("contact").className = "slideUp";
                 }
         
