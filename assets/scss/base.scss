@@ -46,13 +46,12 @@ h5 {
     margin-bottom: 3%;
 }
 h6 {
-  // font-family: 'Darker Grotesque', sans-serif;
-  // font-family: 'Raleway', Arial, sans-serif;
-  font-family: 'Raleway Dots', cursive;
+  font-family: 'Raleway Thin', sans-serif;
   text-align:center;
   color:white;
    font-size:60px;
     margin-bottom: 3%;
+    font-weight: 100;
 }
 
 // .navbar navbar-expand-md navbar-dark bg-dark {
@@ -323,7 +322,12 @@ img{
   margin-left:auto;
   margin-right:auto;
   margin-bottom:2%;
- }
+  }
+
+  .separation.noir{
+    border-top:2px solid black;
+  }
+
  .grafic{
   position: absolute;
   content: '';
@@ -331,10 +335,10 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1600px;
+  border-width: 75px 0 0 1567px;
   z-index: 1;
   border-color: transparent transparent transparent #939393;
-
+  margin-top: -0.2%;
 }
 
 .grafic2{
@@ -344,10 +348,10 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1600px;
+  border-width: 75px 0 0 1567px;
   z-index: 1;
   border-color: transparent transparent transparent#ceceda;
-  margin-top:-4%;
+  margin-top:-4.8%;
 
 }
 .grafic3{
@@ -357,10 +361,24 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1600px;
+  border-width: 0  0 75px 1567px;
   z-index: 1;
-  border-color: black transparent transparent transparent;
-  
+  border-color: transparent transparent white   transparent;
+  margin-top: 0.9%;
+
+}
+
+.grafic4{
+  position: absolute;
+  content: '';
+   left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 75px 0 0 1567px;
+  z-index: 1;
+  border-color: white  transparent transparent transparent;
+  margin-top: 5.5%;
 
 }
  .snip1434 {
@@ -577,14 +595,15 @@ img{
     .snip1347 .titre {
       position: absolute;
       background-color: #1e1e1e;
-      font-family: 'Play', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Raleway Black', Arial, sans-serif;
+      font-weight: 900;
       top: 0;
       right: 0;
       width: 100%;
       padding: 10px 25px 0;
       text-align: right;
       font-size: 1.5em;
-      letter-spacing: 1px;
+      letter-spacing: -1px;
       color: white;
       text-transform: uppercase;
 
@@ -664,7 +683,7 @@ img{
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 55px 0 0 400px;
+      border-width: 55px 0 0 444px;
       border-color: transparent transparent transparent #141414;
     }
 
@@ -995,10 +1014,8 @@ a {
   h6 {
     font-size:60px;
     text-align: left;
-    font-family: 'Raleway Dots', cursive;
-// font-family: 'Raleway', sans-serif;
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
   }
   p{
     font-size:18px;
@@ -1165,15 +1182,18 @@ a {
 /*        ******    compétences      ****** */
 
 .competence {
-  background-color: #141414;
+  background-color: white;
   height:50px;
   width: 100%;
-  padding: 5%;
-  color: white;
+  padding: 5% 5% 5% 10%;
+  color: black;
   font-size: 36px;
 margin:auto;
 }
 
+#competences {
+  color:black;
+}
 .magical {
   margin-left:15%;
   margin-right:15%;
@@ -1402,13 +1422,14 @@ text-align: left;
 
 }
 .projet3 {
-  background-color: #939393 ;
+  background-color: #939393;
   padding-top:100px;
-  height: 1000px;
+  height: 1100px;
 }
 .projet4 {
-  background-color: black ;
+  background-color: white;
   padding-top:100px;
+  height: 450px;
   
 }
 .snip1545 {
