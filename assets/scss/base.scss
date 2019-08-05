@@ -313,7 +313,7 @@ img{
   color: #fff;
   transform: rotate(360deg);
 }
-/*       ********************          qui               *************************                                    */
+/*       ********************          c'est kiki              *************************                                    */
 
 .separation{
   border-top:2px solid white;
@@ -348,6 +348,19 @@ img{
   z-index: 1;
   border-color: transparent transparent transparent#ceceda;
   margin-top:-4%;
+
+}
+.grafic3{
+  position: absolute;
+  content: '';
+   left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 75px 0 0 1600px;
+  z-index: 1;
+  border-color: black transparent transparent transparent;
+  
 
 }
  .snip1434 {
@@ -435,7 +448,7 @@ img{
   margin-bottom:3%;
 }
 
-/*              **************************    page un *******************************     */
+/*              **************************    header  *******************************     */
     .pitxel {
         font-family: 'Raleway Thin', Arial, sans-serif;
         text-align: center;
@@ -722,7 +735,7 @@ img{
     }
 
 
-    /*          partie image        */
+    /*    **************************      partie image    *******************************    */
 
     #des {
 
@@ -1166,7 +1179,7 @@ margin:auto;
   margin-right:15%;
 }
 
-    /*           formation   * * * * * * *     */
+    /*       ******************************    formation   ********************************************    */
     #formation {
 
 
@@ -1185,7 +1198,186 @@ margin:auto;
             text-align: left;
         }
     }
-/*                                  partie projets  dis background           */
+
+
+/*  *********************   partie formation *******************************   */
+.light-ribbon {
+	display: inline-block;
+	border: 12px solid #fff;
+	border-radius: 2px;
+ 	width: 40px;
+}
+.dark-ribbon {
+	display: inline-block;
+	border: 12px solid #333;
+	border-radius: 2px;
+ 	width: 40px;
+}
+.ribbon-left {
+	border-right: 0;
+	border-left: 12px solid transparent;  
+	margin-right: 13px;
+}
+.ribbon-right {
+	border-left: 0;  
+	border-right: 12px solid transparent;
+ 	margin-left: 13px;
+}
+.mon-parcours {
+	list-style: none;
+	position: relative;
+	min-width: 100%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	padding: 0;
+}
+
+.diplome a {
+
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    color:black;
+    font-size: 14px;
+    
+}
+.diplome-autres {
+  font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    color:black;
+    font-size: 14px;
+}
+.cote-droit{
+text-align: left;
+}
+.mon-parcours:before {
+	top: 0;
+    bottom: 0;
+    color:black;
+    font-family: 'Raleway', Arial, sans-serif;
+  	position: absolute;
+  	content: " ";
+  	width: 10px;
+  	background-color: #333;
+  	left: 50%;
+  	margin-left: -10px;
+  	-webkit-transform: skew(0deg, -30deg);
+	-ms-transform: skew(0deg, -30deg);
+	transform: skew(0deg, -30deg);
+	-webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+	        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+}
+.mon-parcours:after {
+	top: 0;
+  	bottom: 0;
+  	position: absolute;
+  	content: " ";
+  	width: 10px;
+  	background-color: #333;
+  	left: 50%;
+  	margin-left: 0px;
+	-webkit-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    transform: skew(0deg, 30deg);
+    -webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+            box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+}
+.mon-parcours li:before, .mon-parcours li:after {
+  content: " ";
+  display: table;
+}
+.mon-parcours li:after {
+  clear: both;
+}
+.mon-parcours li:before, .mon-parcours li:after {
+  content: " ";
+  display: table;
+}
+.mon-parcours li {
+  	margin-bottom: 25px;
+  	position: relative;
+  	padding-left: 50px;
+}
+.mon-parcours li .parcours {
+  	width: calc(50% - 60px);
+  	float: left;
+   background: #fff;
+   color: black;
+  	border-top: 5px solid #333;
+  	padding: 15px;
+  	position: relative;
+  	border-radius: 2px;
+   	-webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+   	        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+}
+.mon-parcours li .parcours p {
+	margin-bottom: 3px;
+}
+.mon-parcours li .parcours:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+.mon-parcours li .parcours:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+.mon-parcours li.droit {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.mon-parcours li.droit .parcours {
+  float: right;
+}
+.mon-parcours li.droit .parcours:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.mon-parcours li.droit .parcours:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.mon-parcours li .cercle {
+	position: absolute;
+	top: 26px;
+	left: 50%;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	margin-left: -16px;
+	border: 3px solid #fff;
+ 	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	z-index: 99;
+	-webkit-box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+	        box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.3);
+}
+.mon-parcours li .cercle-current {
+	border-color: #ceceda;
+}
+ 
+/*                 ***********************                 partie projets  gestion des  backgrounds ************************          */
 .projet figure img {
   height:320px;
   width:100%;
@@ -1194,6 +1386,7 @@ margin:auto;
   background-color: #939393 ;
   padding-top:100px;
    z-index:3;
+
 
 }
 .projets {
@@ -1207,6 +1400,16 @@ margin:auto;
   padding:0;
   margin:0;
 
+}
+.projet3 {
+  background-color: #939393 ;
+  padding-top:100px;
+  height: 1000px;
+}
+.projet4 {
+  background-color: black ;
+  padding-top:100px;
+  
 }
 .snip1545 {
     position: relative;
@@ -1381,7 +1584,7 @@ margin:auto;
     }
     }
 }
-/*                  ************  techno***********   */
+/*                  ************************               techno                        ********************   */
     
 #techno {
   background-image: url(../static/img/code2.png);
@@ -1529,7 +1732,7 @@ padding-top: 5%!important;
   margin-left: auto;
   margin-right: auto;
 }
-/*       *********** contact   ************      */
+/*       *********** *****************        contact  ********************  ************      */
 ul  {
 color: white;
 }
