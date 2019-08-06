@@ -36,7 +36,7 @@ function myFunction() {
           document.getElementById("down").style.display = "none";
         }
 
-          if (document.body.scrollTop >330 || document.documentElement.scrollTop > 330) {
+          if (document.body.scrollTop >320 || document.documentElement.scrollTop > 320) {
            document.getElementById("qui").className = "slideUp";
           }
           if (document.body.scrollTop >1100 || document.documentElement.scrollTop > 1100) {
@@ -52,7 +52,7 @@ function myFunction() {
         if (document.body.scrollTop > 3200 || document.documentElement.scrollTop > 3200) {
     document.getElementById("portfolio").className = "slideUp";
         }
-        if (document.body.scrollTop > 2500 || document.documentElement.scrollTop > 2500) {
+        if (document.body.scrollTop > 3500 || document.documentElement.scrollTop > 3500) {
             document.getElementById("contact").className = "slideUp";
                 }
         
@@ -60,4 +60,21 @@ function myFunction() {
 }
 $("#centralModalSuccess").on('show.bs.modal', function(){
 
+});
+
+form = document.querySelector('form');
+
+form.addEventListener('submit', function () {
+	elements = form.elements; //sélectionne tous les éléments de formulaire y compris le button
+
+    // attention for(of) [ou for(in)] fonctionne avec des collections d'objets mais pas avec des array de base
+	for (let item of elements) { //Pour chaque élèment j'ajoute l'évènement :
+		if (!item.validity.valid) { //Si l'élèment (le champ) n'est pas valide
+            item.classList.add('error'); //on ajoute la classe .error
+            // on chope le spanError contenu dans le label correspondant à l'input dont on parle
+			spanMsg = document.querySelector('label[for="' + item.getAttribute('id') + '"] span.msg-error');
+			spanMsg.classList.add('msg-error--show');
+			event.preventDefault();
+		}
+	}
 });

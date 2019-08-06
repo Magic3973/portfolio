@@ -19,22 +19,17 @@ class Isa
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Nom;
+    private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $yes;
+    private $mail;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $message;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $no;
+    private $commentaires;
 
     public function getId(): ?int
     {
@@ -43,48 +38,36 @@ class Isa
 
     public function getNom(): ?string
     {
-        return $this->Nom;
+        return $this->nom;
     }
 
-    public function setNom(string $Nom): self
+    public function setNom(string $nom): self
     {
-        $this->Nom = $Nom;
+        $this->nom = $nom;
 
         return $this;
     }
 
-    public function getYes(): ?string
+    public function getMail(): ?string
     {
-        return $this->yes;
+        return $this->mail;
     }
 
-    public function setYes(string $yes): self
+    public function setMail(string $mail): self
     {
-        $this->yes = $yes;
+        $this->mail = $mail;
 
         return $this;
     }
 
-    public function getMessage(): ?string
+    public function getCommentaires(): ?string
     {
-        return $this->message;
+        return $this->commentaires;
     }
 
-    public function setMessage(string $message): self
+    public function setCommentaires(string $commentaires): self
     {
-        $this->message = $message;
-
-        return $this;
-    }
-
-    public function getNo(): ?string
-    {
-        return $this->no;
-    }
-
-    public function setNo(string $no): self
-    {
-        $this->no = $no;
+        $this->commentaires = $commentaires;
 
         return $this;
     }

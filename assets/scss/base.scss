@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "team";
-    src: url(/build/fonts/Team.ttf);
-}
-@font-face {
   font-family: "play";
   src: url("../fonts/PlayfairDisplay-Regular.ttf");
 }
@@ -38,12 +34,45 @@ h4 {
   text-transform: uppercase;
   visibility: hidden;
 }
+
+@media screen and (max-width: 640px) {
+  font-size: 16px;
+  line-height:20px;
+  }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  font-size: 24px;
+  line-height:28px;
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  font-size:36px;
+  line-height:36px;
+}
+
+
 h5 {
   font-family: 'Raleway', Arial, sans-serif;
   text-align:center;
   color:white;
-   font-size:24px;
+   font-size:26px;
     margin-bottom: 3%;
+ 
+@media screen and (max-width: 640px) {
+  font-size: 16px;
+ 
+  }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  font-size: 24px;
+
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  font-size:36px;
+
+}
+
 }
 h6 {
   font-family: 'Raleway Thin', sans-serif;
@@ -52,6 +81,22 @@ h6 {
    font-size:60px;
     margin-bottom: 3%;
     font-weight: 100;
+    
+@media screen and (max-width: 640px) {
+  font-size: 24px;
+
+  }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  font-size: 40px;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  font-size:50px;
+  
+}
+
 }
 
 // .navbar navbar-expand-md navbar-dark bg-dark {
@@ -335,7 +380,7 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1567px;
+  border-width: 75px 0 0 1583px;
   z-index: 1;
   border-color: transparent transparent transparent #939393;
   margin-top: -0.2%;
@@ -348,10 +393,10 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1567px;
+  border-width: 75px 0 0 1583px;
   z-index: 1;
   border-color: transparent transparent transparent#ceceda;
-  margin-top:-4.8%;
+  margin-top:-4.7%;
 
 }
 .grafic3{
@@ -361,7 +406,7 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0  0 75px 1567px;
+  border-width: 0  0 75px 1583px;
   z-index: 1;
   border-color: transparent transparent white   transparent;
   margin-top: 0.9%;
@@ -375,10 +420,10 @@ img{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 75px 0 0 1567px;
+  border-width: 75px 0 0 1583px;
   z-index: 1;
   border-color: white  transparent transparent transparent;
-  margin-top: 5.5%;
+  margin-top: 5.4%;
 
 }
  .snip1434 {
@@ -730,7 +775,7 @@ img{
     }
   
     p {
-        font-family: "team  ";
+      font-family: 'Raleway', Arial, sans-serif;
         
 
         @media screen and (max-width: 640px) {
@@ -1068,7 +1113,6 @@ a {
         font-size: 62px;
         left: 0;
         right: 0;
-        
         letter-spacing: -1px;
         margin: 0 auto;
         position: absolute;
@@ -1076,13 +1120,29 @@ a {
         bottom: 50%;
         -webkit-transform: translateY(50%);
         transform: translateY(50%);
+        
+@media screen and (max-width: 640px) {
+  font-size: 24px;
+
+  }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  font-size: 36px;
+
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  font-size:48px;
+
+}
+
       }
       figure.snip1190 h2 span {
         font-weight: 800;
       }
       figure.snip1190 p {
         position: absolute;
-        font-family: 'team', Arial, sans-serif;
+        font-family: 'Raleway', Arial, sans-serif;
         top: 0;
         left: 0;
         right: 0;
@@ -1093,6 +1153,22 @@ a {
         color: black;
         -webkit-transform: translateY(-20%) scale(0.7);
         transform: translateY(-20%) scale(0.7);
+        
+@media screen and (max-width: 640px) {
+  font-size: 16px;
+  
+  }
+
+@media (min-width: 640px) and (max-width: 767px) {
+  font-size: 24px;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  font-size:30px;
+ 
+}
+
       }
       figure.snip1190 .square {
         height: 150px;
@@ -1757,7 +1833,29 @@ padding-top: 5%!important;
 ul  {
 color: white;
 }
+h1{
+  text-align: center;
+}
+.msg-error {
+  display: none;
+  color: red;
+  margin-left: 15px;
+  font-size: .85rem;
 
+  span {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 5px 8px;
+  }
+}
+
+.msg-error--show {
+  display: inline-block;
+}
+
+
+/* ******************    footer       *************************************   */
     footer {
         background-color: black;
         width: 100%;
