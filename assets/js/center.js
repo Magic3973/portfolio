@@ -57,6 +57,3 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: .15em solid white; animation: blink-caret .75s step-end infinite;}";
   document.body.appendChild(css);
 };
-
-
-

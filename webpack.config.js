@@ -17,6 +17,7 @@ Encore
     .addStyleEntry('base', './assets/scss/base.scss')
     .addStyleEntry('center', './assets/scss/center.scss')
 
+
     /*
      * ENTRY CONFIG
      *
@@ -28,6 +29,7 @@ Encore
      */
     .addEntry('app', './assets/js/app.js')
     .addEntry('script', './assets/js/center.js')
+    .addEntry('contact', './assets/js/contact.js')
 
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')

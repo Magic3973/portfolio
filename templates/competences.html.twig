@@ -1,3 +1,4 @@
+{% block body %}
 <section class="projet4">
     <div class="container-fluid">
         <div class="titre">
@@ -14,7 +15,7 @@
             </div> 
             <div class="grafic4">
                 </div>      
-                {% block script %}
-                {{ encore_entry_script_tags('script') }}
-               {% endblock %}
-</section>
+               </section>
+{% endblock %} {% block script %}
+{{ encore_entry_script_tags('script') }}
+{% endblock %}

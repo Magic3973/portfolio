@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\IsaRepository")
@@ -18,11 +20,13 @@ class Isa
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank(message="Cette valeur est obligatoire")
      */
     private $nom;
 
     /**
      * @ORM\Column(type="string", length=255)
+ * @Assert\NotBlank(message="Cette valeur est obligatoire")
      */
     private $mail;
 
