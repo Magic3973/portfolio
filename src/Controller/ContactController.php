@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 use App\Entity\Contact;
+use App\Form\ContactFormType;
 use App\Repository\ContactRepository;
 use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -29,7 +31,7 @@ class ContactController extends AbstractController
     {
         $contact = new Contact();
         
-        $form = $this->createForm(ContactType::class, $contact, array(
+        $form = $this->createForm(ContactFormType::class, $contact, array(
             'action' => $this->generateUrl($request->get('_route'))
         ))
         ->handleRequest($request);
@@ -44,4 +46,40 @@ class ContactController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+    /**
+     * @Route("/contact/new", name="contact_add")
+     */
+public function add(Request $request, ObjectManager $manager, \Swift_Mailer $mailer)
+{
+    $contact = new Contact();
+
+    $form = $this->createForm(ContactFormType::class, $contact);
+
+    $form->handleRequest( $request );
+
+    if( $form->isSubmitted() && $form->isValid()){
+    $manager->persist($contact);
+    $manager->flush();
+    //Envoi un mail
+    $message = (new \Swift_Message("Ajout d'un nouveau contact"))
+    ->setFrom("no-reply@test.fr")
+    ->setTo("youou@you.com")
+    ->setBody(
+        $this->renderView('email/info.html.twig'
+    ), 'test/html'
+);
+
+$mailer->send($message);
+
+    return $this->redirectToRoute('contact');           
+}
+
+
+return $this->render('contact.html.twig', [
+    
+    'form' => $form->createView()
+]
+);
+}
+
 }

@@ -26,7 +26,7 @@ class Isa
 
     /**
      * @ORM\Column(type="string", length=255)
- * @Assert\NotBlank(message="Cette valeur est obligatoire")
+     * @Assert\NotBlank(message="Cette valeur est obligatoire")
      */
     private $mail;
 

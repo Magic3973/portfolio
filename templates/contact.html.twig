@@ -17,7 +17,8 @@
                 <div class="row contacter">
 
                     <!--Grid column-->
-                    <div class="col-md-6">
+                    <div class="col-md-6 contact">
+                           
                         <form id="contact-form" name="contact-form" action="" method="POST" novalidate>
 
                             <!--Grid row-->
@@ -73,21 +74,10 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-md-6 text-center">
-                        <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                <p>Dole, Jura 39100, France</p>
-                            </li>
-
-                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                <p>+ 06 515 518 07</p>
-                            </li>
-
-                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p>isabelle.t@codeur.online</p>
-                            </li>
-                        </ul>
+                    <div class="col-md-6">
+                    <div id="mapi">
                     </div>
+                </div>
                 </div>
                 <!--Grid column-->
             </div>
@@ -114,5 +104,6 @@
     </figure> -->
     {% endblock %}
     {% block script %}
+  
     {{ encore_entry_script_tags('contact') }}
    {% endblock %}

@@ -78,7 +78,9 @@ Encore
     //.addEntry('admin', './assets/js/admin.js')
     .addPlugin( new CopyWebpackPlugin([
         { from : './assets/static/img', to: 'img'},
-        { from : './assets/fonts', to: 'fonts'}
+        { from : './assets/fonts', to: 'fonts'},
+        { from : './assets/cv', to: 'cv'}
+        
     ]))
 ;
 Encore.configureWatchOptions(watchOptions => {
