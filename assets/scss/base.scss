@@ -230,7 +230,9 @@ button.snip0050:active:before {
   --webkit-transform: translateX(100%);
   top:6%;
   
-  
+  @media screen and (max-width: 320px) {
+    width: 30%;
+    }
   
 }
 .isOpen {
@@ -344,15 +346,19 @@ img{
   border-radius: 50%;
   transition: all 0.6s;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.3em!important;
   color:black;
   text-align: center;
   
-  @media screen and (max-width: 640px) {
-    top: 45%;
+
+  @media screen and (max-width:320px) {
+    top: 51%;
     font-size: 0.5em;
     }
-  
+   @media (min-width: 321px) and (max-width: 639px) {
+    top: 45%;
+    font-size: 0.5em;
+  }
   @media (min-width: 640px) and (max-width: 767px) {
     top: 80%;
     font-size: 0.5em;
@@ -531,11 +537,16 @@ img{
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   
-  @media screen and (max-width: 640px) {
+
+  @media screen and (max-width: 320px) {
     font-size: 14px;
-    padding: 0px 10px 0px 40px;
+    padding: 2px 13px 0px 50px;
+    margin: 0;
     }
-  
+   @media (min-width: 321px) and (max-width: 639px) {
+    font-size: 16px;
+    padding: 0px 12.5px 0px 35px;
+  }
   @media (min-width: 640px) and (max-width: 767px) {
     font-size: 16px;
     padding: 0px 12.5px 0px 35px;
@@ -709,6 +720,7 @@ img{
     #schuss:before { 
     
       border-color: transparent transparent transparent  #9ce1e8;
+     
     }
     #ble2 {
       background-color: #74828b!important;
@@ -716,6 +728,7 @@ img{
     #ble2:before { 
     
       border-color: transparent transparent transparent  #74828b;
+      
     }
     #lambada2 {
       background-color: #f8e27e!important;
@@ -723,6 +736,9 @@ img{
     #lambada2:before { 
     
       border-color: transparent transparent transparent  #f8e27e;
+     
+       
+  
     }
     #dash2 {
       background-color: #caf773!important;
@@ -730,6 +746,7 @@ img{
     #dash2:before { 
     
       border-color: transparent transparent transparent  #caf773;
+      
     }
     #wp2 {
       background-color: #000000!important;
@@ -737,6 +754,7 @@ img{
     #wp2:before { 
     
       border-color: transparent transparent transparent  #000000;
+     
     }
 
     .snip1347 * {
@@ -773,35 +791,43 @@ img{
     }
 
     #ski2:before { 
-    
-      border-color: transparent #9ce1e8 transparent transparent;
-    }
+          border-color: transparent #9ce1e8 transparent transparent;
+         }
     #ble{
       background-color: #74828b!important;
       color:#5accfb;
     }
 
     #ble:before { 
-    
-      border-color: transparent #74828b transparent transparent;
-    }
+          border-color: transparent #74828b transparent transparent;
+         }
     #lambada{
       background-color: #f8e27e!important;
       color: #4b5b57;
     }
 
     #lambada:before { 
-    
-      border-color: transparent #f8e27e transparent transparent;
-    }
+          border-color: transparent #f8e27e transparent transparent;
+          }
     #dash2en1{
       background-color: #caf773!important;
-      
+     
     }
 
     #dash2en1:before { 
     
       border-color: transparent #caf773 transparent transparent;
+      @media screen and (max-width: 640px) {
+        margin-top:-2px;
+         }
+       
+       @media (min-width: 640px) and (max-width: 767px) {
+         margin-top:-2px;
+       }
+       
+       @media (min-width: 768px) and (max-width: 950px) {
+         margin-top:-2px;
+       }
     }
 
     #wp{
@@ -812,6 +838,17 @@ img{
     #wp:before { 
     
       border-color: transparent #000000 transparent transparent;
+      @media screen and (max-width: 640px) {
+        margin-top:-2px;
+         }
+       
+       @media (min-width: 640px) and (max-width: 767px) {
+         margin-top:-2px;
+       }
+       
+       @media (min-width: 768px) and (max-width: 950px) {
+         margin-top:-2px;
+       }
     }
 
 
@@ -825,12 +862,32 @@ img{
       border-style: solid;
       border-width: 0 450px 55px 0;
       border-color: transparent #1e1e1e transparent transparent;
+      
+      @media screen and (max-width: 320px) {
+        margin-top:-1px;
+        border-width: 0 297px 55px 0;
+         }
+         @media (min-width: 321px) and (max-width: 639px) {
+          margin-top:-2px;
+          border-width: 0 375px 55px 0;
+        }
+       @media (min-width: 640px) and (max-width: 767px) {
+         margin-top:-2px;
+         border-width: 0 339px 55px 0;
+       }
+       @media (min-width:768px) and (max-width: 800px) {
+        margin-top:-2px;
+        border-width: 0 339px 55px 0;
+      }
+       
     }
     .snip1347 figcaption {
       width: 100%;
       background-color: #141414;
       padding: 0 25px 25px;
       position: relative;
+      
+       
     }
    
     .snip1347 figcaption:before {
@@ -843,6 +900,20 @@ img{
       border-style: solid;
       border-width: 55px 0 0 444px;
       border-color: transparent transparent transparent #141414;
+        
+      @media screen and (max-width: 640px) {
+        margin-bottom:-1px;
+        border-width: 55px 0 0 339px;
+         }
+       
+       @media (min-width: 640px) and (max-width: 767px) {
+        margin-bottom:-1px;
+        border-width: 55px 0 0 339px;
+       }
+       @media (min-width: 768px) and (max-width: 800px) {
+        margin-bottom:-1px;
+        border-width: 55px 0 0 339px;
+       }
     }
 
    
@@ -910,7 +981,18 @@ img{
         }
 
     }
+.modal-body{
+  @media screen and (max-width: 640px) {
+    padding : 0 1.2rem 0 0;
 
+}
+
+  @media (min-width: 640px) and (max-width: 767px) {
+   padding : 0 1.2rem 0 0;
+
+
+}
+}
 
     /*    **************************      partie image    *******************************    */
 
@@ -1030,6 +1112,28 @@ a {
   right: 0;
   z-index: 1;
   margin-top: 34%;
+
+
+  @media screen and (max-width: 320px) {
+    margin-top: 57%;
+  
+    }
+  @media (min-width: 321px) and (max-width: 639px) {
+    margin-top: 47%;
+  
+   
+  }
+  @media (min-width: 640px) and (max-width: 767px) {
+    margin-top: 47%;
+  
+   
+  }
+  
+  @media (min-width: 768px) and (max-width: 950px) {
+    margin-top: 45%;
+  
+    
+  }
 }
 }
 
@@ -1168,6 +1272,7 @@ a {
 .cadre {
   padding-left: 5%;
   padding-bottom: 4.6%;
+  
 
   h6 {
     font-size:60px;
@@ -1175,12 +1280,16 @@ a {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     
-@media screen and (max-width: 640px) {
-  font-size: 40px;
+@media screen and (max-width: 320px) {
+  font-size: 30px;
   padding-top: 2%;
 
   }
-
+  @media (min-width: 321px) and (max-width: 639px) {
+    font-size: 40px;
+    padding-top: 2%;
+   
+  }
 @media (min-width: 640px) and (max-width: 767px) {
   font-size: 47px;
  
@@ -1196,7 +1305,12 @@ a {
     font-size:18px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    @media screen and (max-width: 320px) {
+      font-size: 14px;
+     
+      }
   }
+
 }
 
 #magic{ background-image: url(../static/img/buro.jpeg);
@@ -1208,11 +1322,15 @@ a {
    max-width: 100%;
   position: inherit;
   
-@media screen and (max-width: 640px) {
-  height: 450px;
+@media screen and (max-width: 320px) {
+  height: 350px;
  
   }
-
+  @media (min-width: 321px) and (max-width: 639px) {
+    height: 600px;
+    
+  
+  }
 @media (min-width: 640px) and (max-width: 767px) {
   height: 600px;
   
@@ -1518,6 +1636,10 @@ margin:auto;
     font-weight: 700;
     color:black;
     font-size: 14px;
+    @media screen and (max-width: 320px) {
+      font-size: 9px;
+     
+      }
     
 }
 .diplome-autres {
@@ -1525,6 +1647,11 @@ margin:auto;
     font-weight: 300;
     color:black;
     font-size: 14px;
+
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+     
+      }
 }
 .cote-droit{
 text-align: left;
@@ -1769,11 +1896,16 @@ text-align: left;
   padding-top:100px;
   height: 1100px;
   
-  @media screen and (max-width: 640px) {
+
+  @media screen and (max-width: 320px) {
     padding-top:30px;
+    height: 1450px;
+}
+@media (min-width: 321px) and (max-width: 639px) {
+
+  padding-top:30px;
     height: 1600px;
 }
-
 
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -2010,6 +2142,7 @@ text-align: left;
   color: #5e4958;
   opacity: 0.6;
      transform: rotate(360deg);
+     transition:all .25s; 
 }
 
   .col-3{
@@ -2035,8 +2168,12 @@ margin-top: 3.5%;
 .sass {
   flex-basis: 12%;
   margin-left: 15%;
-  @media screen and (max-width: 640px) {
-    margin-left: 5%;
+
+  @media screen and (max-width: 320px) {
+    margin-left: 0;
+}
+@media (min-width: 321px) and (max-width: 639px) {
+  margin-left: 5%;
 }
 @media (min-width: 640px) and (max-width: 767px) {
   margin-left: 5%;
