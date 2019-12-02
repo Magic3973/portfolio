@@ -29,7 +29,7 @@ function myFunction() {
         else {
           document.getElementById("top").style.display = "none";
         }
-        if (document.body.scrollTop >40 || document.documentElement.scrollTop > 40) {
+        if (document.body.scrollTop >40 || document.documentElement.scrollTop > 38) {
           document.getElementById("down").style.display = "block";
         }
         else {
@@ -60,11 +60,11 @@ function myFunction() {
 }
 
 
-var mymapi = L.map('mapi').setView([47.0908855,5.4891488], 18);
+var mymapi = L.map('mapi').setView([47.0908855,5.4891488], 15);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/magic3973/cjw1v6ev80oyz1cli0fb6f72s/tiles/256/{z}/{x}/{y}?&access_token=pk.eyJ1IjoibWFnaWMzOTczIiwiYSI6ImNqdzF3cDc3MDAzNW80OXFyOTlocjZ6ajIifQ.3sbLCyZ6burOL2BHRAOCTA#10.0/42.362400/-71.020000/0}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 21,
+    maxZoom: 15,
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoibWFnaWMzOTczIiwiYSI6ImNqdzF3cDc3MDAzNW80OXFyOTlocjZ6ajIifQ.3sbLCyZ6burOL2BHRAOCTA'
 }).addTo(mymapi);
