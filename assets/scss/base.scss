@@ -234,10 +234,19 @@ button.snip0050:active:before {
   @media screen and (max-width: 320px) {
     width: 30%;
     }
-
-  @media (min-width: 1024px) and (max-width: 1200px) {
-      width: 27%!important;
+    @media (min-width: 321px) and (max-width: 768px) {
+      right:3%;
+      top:-6%;
      
+    }
+    @media (min-width: 769px) and (max-width: 1023px) {
+      right:3%;
+      top:10%;
+     
+    }
+  @media (min-width: 1024px) and (max-width: 1366px) {
+      width: 27%!important;
+      top:-12%;
     }
   
 }
@@ -245,7 +254,7 @@ button.snip0050:active:before {
   transform: translateX(0%);
   --webkit-transform: translateX(0%);
   @media screen and (max-width: 640px) {
-    margin-right: 25%;
+    margin-right: 18%;
     }
   
   @media (min-width: 640px) and (max-width: 767px) {
@@ -254,7 +263,7 @@ button.snip0050:active:before {
   
   @media (min-width: 768px) and (max-width: 950px) {
    
-    margin-right: 15%;
+    margin-right: 4%;
   }
 }
   .navigation ul {
@@ -278,8 +287,11 @@ transform: translateY(-50%);
         font-weight: 800;
         letter-spacing: .07em;
 
-        @media screen and (max-width: 360px) {
+        @media screen and (max-width: 375px) {
           font-size: 12px;
+          }
+          @media (min-width: 376px) and (max-width: 812px) {
+            font-size: 16px;
           }
        
               }
@@ -481,6 +493,15 @@ img{
   border-width: 37px 0 0 1366px;
   margin-top: 3%;
 }
+@media (min-width: 1366px) and (max-width: 1440px) {
+  border-width: 37px 0 0 1440px;
+  margin-top: 2.1%;
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  border-width: 37px 0 0 2560px;
+  margin-top: 3.2%;
+}
 }
 
 .grafic2{
@@ -515,10 +536,16 @@ img{
     border-width: 54px 0 0 1024px;
     margin-top: -4.5%;
   }
-  @media (min-width: 1101px) and (max-width: 1366px) {
-    border-width: 54px 0 0 1366px;
-    margin-top: -3.8%;
+  @media (min-width: 1101px) and (max-width: 1440px) {
+    border-width: 54px 0 0 1440px;
+    margin-top: -3.6%;
   }
+
+  @media (min-width: 1441px) and (max-width: 2560px) {
+    border-width: 54px 0 0 2560px;
+    margin-top: -2%;
+  }
+
 }
 .grafic3{
   position: absolute;
@@ -555,8 +582,18 @@ img{
   }
   @media (min-width: 1101px) and (max-width: 1366px) {
     border-width: 0 0 55px 1366px;
-    margin-top: 7.8%;
+    margin-top: 6.3%;
   }
+
+  @media (min-width: 1367px) and (max-width: 1440px) {
+    border-width: 0 0 55px 1440px;
+    margin-top: 6.3%;
+  }
+  @media (min-width: 1441px) and (max-width: 2560px) {
+    border-width: 0 0 55px 2560px;
+    margin-top: 2.7%;
+  }
+
 }
 
 .grafic4{
@@ -569,7 +606,7 @@ img{
   border-width: 75px 0 0 1519px;
   z-index: 1;
   border-color: white  transparent transparent transparent;
-  margin-top: 6.2 %;
+  margin-top: 6.2%;
 
   @media screen and (max-width: 640px) {
     border-width: 0;
@@ -595,6 +632,14 @@ img{
   @media (min-width: 1101px) and (max-width: 1366px) {
     border-width: 55px 0 0 1366px;
     margin-top: 8%;
+  }
+  @media (min-width: 1367px) and (max-width: 1440px) {
+    border-width: 55px 0 0 1440px;
+    margin-top: 7.3%;
+  }
+  @media (min-width: 1441px) and (max-width: 2560px) {
+    border-width: 55px 0 0 2560px;
+    margin-top: -2%;
   }
 }
  .snip1434 {
@@ -1216,6 +1261,17 @@ a {
   
     
   }
+  @media (min-width: 951px) and (max-width: 1440px) {
+    margin-top: 39%;
+  
+    
+  }
+
+  @media (min-width: 1441px) and (max-width: 2560px) {
+    margin-top: 23%;
+  
+    
+  }
 }
 }
 
@@ -1759,7 +1815,7 @@ margin:auto;
     font-weight: 300;
     color:black;
     font-size: 14px;
-
+    
     @media screen and (max-width: 320px) {
       font-size: 12px;
      
@@ -1951,6 +2007,20 @@ text-align: left;
 .projet figure img {
   height:320px;
   width:100%;
+
+  @media screen and (max-width: 640px) {
+    height:240px;
+}
+@media (min-width: 640px) and (max-width: 767px) {
+
+  height:250px;
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  height:250px;
+}
+@media (min-width: 951px) and (max-width: 1024px) {
+  height:220px;
+}
 }
 .projet {
   background-color: #939393 ;
